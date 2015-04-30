@@ -1,0 +1,30 @@
+1. Install Node.js or verify that it is installed
+	https://nodejs.org/download/
+
+2. Download and Install MongoDB
+	https://www.mongodb.org/downloads
+
+3. Install Ionic Framework
+	http://ionicframework.com/getting-started/
+
+4. Pull project repository
+
+5. In a terminal window run mongod to start the Mongodb instance
+
+6. In a separate terminal window run mongo (starts mongoDB CLI)
+
+7. Run 'use target-carpool'
+
+8. In a separate terminal window CD to the project directory
+
+9. CD into the API project directory /Target-Api
+
+10. Run 'npm install' to install the node modules
+
+11. Run node server.js to start the node server
+
+12. In a file explorer go to /carpool-target/www
+
+13. Open the index.html file in a web browser(probably avoid IE)
+
+14. The app will now be running as a web page.

@@ -1,0 +1,45 @@
+/* reusable utility classes */
+.bar.bar-red,
+.tabs-red .tabs {
+  background-color: #ce1126;
+  color: #fff;
+}
+.bar.bar-red .title,
+.bar.bar-red .button {
+  color: #fff;
+}
+.bg-red {
+  background-color: #ce1126;
+}
+.button-red {
+  background-color: #ce1126;
+  color: #fff;
+}
+.button-red:hover {
+  color: #aaa;
+}
+.map-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.text-muted {
+  color: #aaa;
+}
+.text-red {
+  color: #ce1126;
+}
+.text-white {
+  color: #fff;
+}
+.input-custom[type="text"] {
+  background-color: #eee;
+  padding: 0px;
+  display: block;
+  margin: 0px;
+  height: 18px;
+  font-size: 16px;
+}

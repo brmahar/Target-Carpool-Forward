@@ -1,0 +1,49 @@
+<ion-view view-title="Carpool Information">
+  <ion-content>
+    <div class="list">
+      <div class="item item-divider">
+        Carpool Details
+      </div>
+      <a class="item item-icon-left">
+        <i class="icon ion-ios-people"></i>
+        {{ rideDetails.seats }} Seat(s)
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-android-time"></i>
+        {{ rideDetails.arrivalTime | date:'hh:mm a' }}
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-speedometer"></i>
+        {{ rideDetails.mileage }} MPG
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-android-color-palette"></i>
+        {{ rideDetails.color }}
+      </a>
+      <div class="item item-divider">
+        Contact Information
+      </div>
+      <a class="item item-icon-left" href="mailto:{{ user.email }}">
+        <i class="icon ion-email"></i>
+          {{ user.email }}
+      </a>
+      <a class="item item-icon-left" href="tel:{{ user.workPhone }}">
+        <i class="icon ion-android-phone-portrait"></i>
+        Work: {{ user.workPhone }}
+      </a>
+      <a class="item item-icon-left" href="tel:{{ user.mobilePhone }}">
+        <i class="icon ion-android-phone-portrait"></i>
+        Personal: {{ user.mobilePhone }}
+      </a>
+      <div class="item item-divider">
+        Location Information
+      </div>
+      <a class="item item-icon-left" href="https://www.google.com/maps/@{{ address.loc[1] }},{{ address.loc[0] }}">
+        <i class="icon ion-home"></i>
+        Location: {{ address.street + ", " + address.city + ", " + 
+          address.state + " " + address.zip}}
+      </a>
+      <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:red%7Clabel:D%7C{{ address.loc[1] }},{{ address.loc[0] }}&markers=color:green%7Clabel:S%7C{{ startAddress.loc[1] }},{{ startAddress.loc[0] }}" class="map-image"/>
+    </div>
+  </ion-content>
+</ion-view>

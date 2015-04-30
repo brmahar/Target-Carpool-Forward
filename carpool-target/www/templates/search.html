@@ -1,0 +1,62 @@
+<ion-view view-title="Search">
+  <ion-content class="padding">
+    <h4 class="text-center {{ searchClass }}">
+     {{ searchText }}
+    </h4>
+    <form ng-submit="doSearch(search)">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-ios-location placeholder-icon"></i>
+          <span class="input-label">
+            Destination Street
+          </span>
+          <input type="text" placeholder="Wallaby Way" ng-model="search.destStreet">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-pin placeholder-icon"></i>
+          <span class="input-label">
+            Destination Zip Code
+          </span>
+          <input type="text" placeholder="54321" ng-model="search.destZip">
+        </label>
+        <label class="item item-input item-select">
+          <i class="icon ion-ios-clock placeholder-icon"></i>
+          <div class="input-label">
+            Time
+          </div>
+          <select ng-model="search.time">
+            <option value="24:00:00">12:00 AM</option>
+            <option value="1:00:00">1:00 AM</option>
+            <option value="2:00:00">2:00 AM</option>
+            <option value="3:00:00">3:00 AM</option>
+            <option value="4:00:00">4:00 AM</option>
+            <option value="5:00:00">5:00 AM</option>
+            <option value="6:00:00">6:00 AM</option>
+            <option value="7:00:00">7:00 AM</option>
+            <option value="8:00:00" selected>8:00 AM</option>
+            <option value="9:00:00">9:00 AM</option>
+            <option value="10:00:00">10:00 AM</option>
+            <option value="11:00:00">11:00 AM</option>
+            <option value="12:00:00">12:00 PM</option>
+            <option value="13:00:00">1:00 PM</option>
+            <option value="14:00:00">2:00 PM</option>
+            <option value="15:00:00">3:00 PM</option>
+            <option value="16:00:00">4:00 PM</option>
+            <option value="17:00:00">5:00 PM</option>
+            <option value="18:00:00">6:00 PM</option>
+            <option value="19:00:00">7:00 PM</option>
+            <option value="20:00:00">8:00 PM</option>
+            <option value="21:00:00">9:00 PM</option>
+            <option value="22:00:00">10:00 PM</option>
+            <option value="23:00:00">11:00 PM</option>
+          </select>
+        </label>
+        <label class="item">
+          <button class="button button-block button-red icon-right ion-chevron-right" type="submit">
+            Search
+          </button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

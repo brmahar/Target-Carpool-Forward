@@ -1,0 +1,32 @@
+<ion-view hide-nav-bar="true" animation="slide-left-right">
+  <ion-header-bar class="bar-red">
+    <h1 class="title">
+      Carpool App
+    </h1>
+  </ion-header-bar>
+  <ion-content class="login">
+    <h3 class="text-center padding">
+      Please Login
+    </h3>
+    <h4 class="text-center {{ loginClass }}">
+     {{ loginText }}
+    </h4>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" ng-model="loginData.username" placeholder="Email">
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-locked placeholder-icon"></i>
+          <input type="password" ng-model="loginData.password" placeholder="Password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-red icon-right ion-log-in" type="submit">
+            Login
+          </button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

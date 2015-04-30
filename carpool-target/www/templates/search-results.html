@@ -1,0 +1,16 @@
+<ion-view view-title="Search Results">
+  <ion-content class="">
+    <div class="list" ng-if="searchResults.length">
+      <div class="item item-icon-left" ng-repeat="ride in searchResults" ng-click="viewDetails(ride._id)">
+        <i class="icon ion-pin"></i>
+        {{ ride.arrivalTime | date:'hh:mm a' }}
+        <span class="item-note">
+          {{ ride.seats }} seats
+        </span>
+      </div>
+    </div>
+    <h4 class="text-center padding" ng-hide="searchResults.length">
+      No Results
+    </h4>
+  </ion-content>
+</ion-view>
